@@ -1,3 +1,9 @@
+/**
+ * index.js
+ * 
+ * this is the first file to be read by React
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -7,7 +13,9 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* StrictMode - this only work in developpment mode
+                     shows the problems found by React */}
+    <App />  {/* we are using the component App */}
   </React.StrictMode>
 );
 
